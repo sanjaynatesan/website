@@ -72,9 +72,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="pb-10">
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
+            <h3 className="text-3xl py-1">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               In Computer Science, I have experience from several various
               ventures in prominent research institutions such as{" "}
@@ -96,17 +96,14 @@ export default function Home() {
               </span>
               .
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white pb-5">
               Here are some skills I have developed from these experiences.
             </p>
           </div>
           <div
-            className="lg:flex gap-10 mx-auto lg:min-w-0"
-            style={{
-              justifyContent: "center",
-            }}
+            className="grid lg:grid-cols-3 md:grid-cols-2 gap-8"
           >
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <Image
                 src={design}
                 width={100}
@@ -125,7 +122,7 @@ export default function Home() {
               <p className="text-gray-800 dark:text-white py-1">Flask</p>
               <p className="text-gray-800 dark:text-white py-1">Django</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <Image
                 src={design}
                 width={100}
@@ -144,7 +141,7 @@ export default function Home() {
               <p className="text-gray-800 dark:text-white py-1">Node.js</p>
               <p className="text-gray-800 dark:text-white py-1">Swift/XCode</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <Image
                 src={design}
                 width={100}
