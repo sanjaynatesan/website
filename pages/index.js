@@ -5,6 +5,7 @@ import Image from "next/image";
 import sanjay from "../public/sanjay.jpg";
 import design from "../public/design.png";
 import { useState } from "react";
+import Typed from "react-typed";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,9 +46,18 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Sanjay Natesan
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
-              Developer. Data Scientist. Artist.
-            </h3>
+            <p className="text-2xl py-2 md:text-3xl font-light">
+              <span className="text-slider-items"></span>
+              <strong className="text-slider">
+                <Typed
+                  strings={["Developer", "Data Scientist", "Artist"]}
+                  typeSpeed={80}
+                  backDelay={1100}
+                  backSpeed={30}
+                  loop
+                />
+              </strong>
+            </p>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
               Hey! I'm Sanjay, a student at Columbia University studying
               Computer Science and Economics. Welcome to my website, where you
@@ -100,9 +110,7 @@ export default function Home() {
               Here are some skills I have developed from these experiences.
             </p>
           </div>
-          <div
-            className="grid lg:grid-cols-3 md:grid-cols-2 gap-8"
-          >
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <Image
                 src={design}
@@ -156,10 +164,16 @@ export default function Home() {
               </h4>
               <p className="text-gray-800 dark:text-white py-1">Python</p>
               <p className="text-gray-800 dark:text-white py-1">R</p>
-              <p className="text-gray-800 dark:text-white py-1">scikit learn / sciPy</p>
+              <p className="text-gray-800 dark:text-white py-1">
+                scikit learn / sciPy
+              </p>
               <p className="text-gray-800 dark:text-white py-1">ggplot2</p>
-              <p className="text-gray-800 dark:text-white py-1">dplyr/tidyr/shiny</p>
-              <p className="text-gray-800 dark:text-white py-1">pandas/matplotlib</p>
+              <p className="text-gray-800 dark:text-white py-1">
+                dplyr/tidyr/shiny
+              </p>
+              <p className="text-gray-800 dark:text-white py-1">
+                pandas/matplotlib
+              </p>
             </div>
           </div>
         </section>
