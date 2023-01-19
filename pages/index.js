@@ -124,7 +124,7 @@ export default function Home() {
           <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
             Languages
           </div>
-          <div className="text-5xl grid xl:grid-cols-8 md:grid-cols-4 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-gray-200 dark:text-teal-600">
+          <div className="text-5xl grid xl:grid-cols-8 sm:grid-cols-4 grid-cols-2 gap-10 py-4 xl:max-w-4xl sm:max-w-md max-w-[200px] mx-auto text-gray-100 dark:text-teal-600">
             <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
               <div className="m-auto">
                 <SiPython className="mx-auto" />
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
             Frontend, UI Libraries, and Frameworks
           </div>
-          <div className="text-5xl grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-white dark:text-teal-600">
+          <div className="text-5xl grid xl:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10 py-4 xl:max-w-2xl sm:max-w-xs max-w-[200px] mx-auto text-gray-100 dark:text-teal-600">
             <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
               <div className="m-auto">
                 <SiReact className="mx-auto" />
@@ -218,7 +218,7 @@ export default function Home() {
           <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
             Production Testing and Tools
           </div>
-          <div className="text-5xl grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-white dark:text-teal-600">
+          <div className="text-5xl grid xl:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10 py-4 xl:max-w-2xl sm:max-w-xs max-w-[200px] mx-auto text-gray-100 dark:text-teal-600">
             <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
               <div className="m-auto">
                 <SiFirebase className="mx-auto" />
