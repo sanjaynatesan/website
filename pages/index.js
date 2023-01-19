@@ -233,6 +233,12 @@ export default function Home() {
             </div>
             <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
               <div className="m-auto">
+                <SiVercel className="mx-auto" />
+                <p className="pt-2 text-sm">Vercel</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
                 <SiAmazonaws className="mx-auto" />
                 <p className="pt-2 text-sm">AWS</p>
               </div>
@@ -247,12 +253,6 @@ export default function Home() {
               <div className="m-auto">
                 <SiPostman className="mx-auto" />
                 <p className="pt-2 text-sm">Postman</p>
-              </div>
-            </div>
-            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
-              <div className="m-auto">
-                <SiVercel className="mx-auto" />
-                <p className="pt-2 text-sm">Vercel</p>
               </div>
             </div>
           </div>
