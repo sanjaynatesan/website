@@ -1,32 +1,34 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
-import Link from "next/link";
 import Image from "next/image";
-import sanjay from "../public/sanjay.jpg";
-import design from "../public/design.png";
+import Link from "next/link";
 import { useState } from "react";
-import Typed from "react-typed";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
-  SiPython,
+  SiAmazonaws,
+  SiChakraui,
+  SiCplusplus,
+  SiCss3,
+  SiDjango,
+  SiFirebase,
+  SiFlask,
+  SiGit,
+  SiHeroku,
+  SiHtml5,
   SiJava,
   SiJavascript,
-  SiCss3,
-  SiHtml5,
-  SiRstudio,
-  SiReact,
   SiNextdotjs,
-  SiChakraui,
-  SiC,
-  SiFlask,
-  SiDjango,
+  SiPostman,
+  SiPython,
+  SiReact,
+  SiRstudio,
   SiSwift,
   SiTailwindcss,
-  SiFirebase,
-  SiHeroku,
-  SiGit,
-  SiPostman,
+  SiVercel,
 } from "react-icons/si";
+import Typed from "react-typed";
+import design from "../public/design.png";
+import sanjay from "../public/sanjay.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,25 +43,37 @@ export default function Home() {
       </Head>
 
       <main className="bg-white text-black px-10 md:px-20 lg:px-40 dark:bg-gray-800 dark:text-white ">
-        <section className="min-h-screen pb-10">
+        <section className="min-h-screen pb-32">
           <nav className="py-10 mb-12 flex justify-between">
             <a href="localhost:3000">
               <h1 className="text-xl font-burtons">sanjaynatesan</h1>
             </a>
-            <ul className="flex items-center gap-4">
-              <li>
-                <Link
-                  className="bg-gradient-to-r to-cyan-500 from-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/music"
-                >
-                  Music Page
-                </Link>
-              </li>
+            <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
                 />
+              </li>
+              <Link
+                className=" px-4 py-2 text-black dark:text-white ml-5"
+                href="/#skills"
+              >
+                Skills
+              </Link>
+              <li>
+                <Link
+                  className=" px-4 py-2 text-black dark:text-white"
+                  href="/#projects"
+                >
+                  Projects
+                </Link>
+                <Link
+                  className="bg-gradient-to-r to-cyan-500 from-teal-500 text-white px-4 py-2 rounded-md"
+                  href="/music"
+                >
+                  Music Page
+                </Link>
               </li>
             </ul>
           </nav>
@@ -103,12 +117,150 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pb-10">
+        <section className="text-center" id="skills">
           <div>
-            <h3 className="text-3xl py-1">Select Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Some projects I have recently completed...
-            </p>
+            <h3 className="text-5xl py-1 text-teal-600">Skills</h3>
+          </div>
+          <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
+            Languages
+          </div>
+          <div className="text-5xl grid xl:grid-cols-8 md:grid-cols-4 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-gray-200 dark:text-teal-600">
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiPython className="mx-auto" />
+                <p className="pt-2 text-sm">Python</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiJava className="mx-auto" />
+                <p className="pt-2 text-sm">Java</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiRstudio className="mx-auto" />
+                <p className="pt-2 text-sm">R</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiCplusplus className="mx-auto" />
+                <p className="pt-2 text-sm">C / C++</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiJavascript className="mx-auto" />
+                <p className="pt-2 text-sm">JavaScript</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiHtml5 className="mx-auto" />
+                <p className="pt-2 text-sm">HTML 5</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiCss3 className="mx-auto" />
+                <p className="pt-2 text-sm">CSS 3</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiSwift className="mx-auto" />
+                <p className="pt-2 text-sm">Swift</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
+            Frontend, UI Libraries, and Frameworks
+          </div>
+          <div className="text-5xl grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-white dark:text-teal-600">
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiReact className="mx-auto" />
+                <p className="pt-2 text-sm">React</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiNextdotjs className="mx-auto" />
+                <p className="pt-2 text-sm">Next.js</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiChakraui className="mx-auto" />
+                <p className="pt-2 text-sm">Chakra UI</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiTailwindcss className="mx-auto" />
+                <p className="pt-2 text-sm">Tailwind CSS</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiFlask className="mx-auto" />
+                <p className="pt-2 text-sm">Flask</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiDjango className="mx-auto" />
+                <p className="pt-2 text-sm">Django</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-xl md:text-2xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
+            Production Testing and Tools
+          </div>
+          <div className="text-5xl grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 justify-center gap-10 py-4 max-w-4xl mx-auto text-white dark:text-teal-600">
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiFirebase className="mx-auto" />
+                <p className="pt-2 text-sm">Firebase</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiHeroku className="mx-auto" />
+                <p className="pt-2 text-sm">Heroku</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiAmazonaws className="mx-auto" />
+                <p className="pt-2 text-sm">AWS</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiGit className="mx-auto" />
+                <p className="pt-2 text-sm">Git</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiPostman className="mx-auto" />
+                <p className="pt-2 text-sm">Postman</p>
+              </div>
+            </div>
+            <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
+              <div className="m-auto">
+                <SiVercel className="mx-auto" />
+                <p className="pt-2 text-sm">Vercel</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-24 pb-10" id="projects">
+          <div className="text-center">
+            <h3 className="text-3xl py-1 text-teal-600">Select Projects</h3>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
@@ -175,44 +327,6 @@ export default function Home() {
                 pandas/matplotlib
               </p>
             </div>
-          </div>
-        </section>
-        <section className="text-center pb-10">
-          <div>
-            <h3 className="text-3xl py-1 text-teal-600">Skills</h3>
-          </div>
-          <div className="text-md md:text-xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
-            Languages
-          </div>
-          <div className="text-5xl flex justify-center gap-10 py-3 max-w-4xl mx-auto text-gray-600 dark:text-white">
-            <SiPython />
-            <SiJava />
-            <SiRstudio />
-            <SiC />
-            <SiJavascript />
-            <SiHtml5 />
-            <SiCss3 />
-            <SiSwift />
-          </div>
-          <div className="text-md md:text-xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
-            Frontend, UI Libraries, and Frameworks
-          </div>
-          <div className="text-5xl flex justify-center gap-10 py-3 max-w-4xl mx-auto text-gray-600 dark:text-white">
-            <SiReact />
-            <SiNextdotjs />
-            <SiChakraui />
-            <SiTailwindcss />
-            <SiFlask />
-            <SiDjango />
-          </div>
-          <div className="text-md md:text-xl py-2 leading-8 text-gray-600 dark:text-white pb-5">
-            Production Testing and Tools
-          </div>
-          <div className="text-5xl flex justify-center gap-10 py-3 max-w-4xl mx-auto text-gray-600 dark:text-white">
-            <SiFirebase />
-            <SiHeroku />
-            <SiGit />
-            <SiPostman />
           </div>
         </section>
       </main>
