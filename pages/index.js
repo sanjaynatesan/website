@@ -13,6 +13,8 @@ import {
   SiFirebase,
   SiFlask,
   SiGit,
+  SiGithub,
+  SiGooglechrome,
   SiHeroku,
   SiHtml5,
   SiJava,
@@ -26,9 +28,11 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
+import { IoIosPaper } from "react-icons/io";
 import Typed from "react-typed";
-import design from "../public/design.png";
-import sanjay from "../public/sanjay.jpg";
+import design from "../public/img/design.png";
+import sanjay from "../public/img/sanjay.jpg";
+import covres from "../public/img/covid-research.jpeg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -262,25 +266,79 @@ export default function Home() {
           <div className="text-center">
             <h3 className="text-3xl py-1 text-teal-600">Select Projects</h3>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-8">
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className=" mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Backend Programming and Frameworks
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                Manhattan Virome Project
               </h3>
-              <h4 className="py-4 text-teal-600">
-                Some backend programming languages and frameworks I have used
+              <h4 className="py-4">
+                Helped investigate the transmission of respiratory viruses
+                throughout urban Manhattan to develop significant understanding
+                into transmission dynamics, and improving respiratory disease
+                model simulation and forecast. Contributed to development of
+                website describing findings.
               </h4>
-              <p className="text-gray-800 dark:text-white py-1">Python</p>
-              <p className="text-gray-800 dark:text-white py-1">Java</p>
-              <p className="text-gray-800 dark:text-white py-1">C/C#</p>
-              <p className="text-gray-800 dark:text-white py-1">Flask</p>
-              <p className="text-gray-800 dark:text-white py-1">Django</p>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Python
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  JavaScript
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Django
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  CSS
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  AWS
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a href="http://18.204.18.242:1234/" target="_blank">
+                  <SiGooglechrome />
+                </a>
+                <a
+                  href="https://genomemedicine.biomedcentral.com/"
+                  target="_blank"
+                >
+                  <IoIosPaper />
+                </a>
+              </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                Personal Website
+              </h3>
+              <h4 className="py-4">
+                Created this personal website from scratch!
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Next.js
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  React
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Tailwind CSS
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Vercel
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a href="http://sanjaynatesan.com/" target="_blank">
+                  <SiGooglechrome />
+                </a>
+                <a
+                  href="https://github.com/sanjaynatesan/website"
+                  target="_blank"
+                >
+                  <SiGithub />
+                </a>
+              </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <Image
@@ -330,9 +388,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-32">
-          
-        </section>
+        <section className="pt-32"></section>
       </main>
     </div>
   );

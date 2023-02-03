@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      backgroundImage: {
+        'covid-research': "url('/img/covid-research.jpeg')",
+      }
     },
   },
   plugins: [],
