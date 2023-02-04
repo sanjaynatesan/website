@@ -312,7 +312,8 @@ export default function Home() {
                 Personal Website
               </h3>
               <h4 className="py-4">
-                Created this personal website from scratch!
+                Created this personal website from scratch using Next.js, React,
+                and Tailwind CSS. This website was deployed using Vercel.
               </h4>
               <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
                 <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
@@ -341,49 +342,141 @@ export default function Home() {
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className=" mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Frontend Programming
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                HTTP Server
               </h3>
-              <h4 className="py-4 text-teal-600">
-                Some frontend programming languages I have used
+              <h4 className="py-4">
+                Built an HTTP web server from scratch, using socket programming
+                in C to serve static HTML pages and dynamic pages queried from a
+                database lookup server upon receiving user input text.
               </h4>
-              <p className="text-gray-800 dark:text-white py-1">HTML/CSS</p>
-              <p className="text-gray-800 dark:text-white py-1">JavaScript</p>
-              <p className="text-gray-800 dark:text-white py-1">React</p>
-              <p className="text-gray-800 dark:text-white py-1">Node.js</p>
-              <p className="text-gray-800 dark:text-white py-1">Swift/XCode</p>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  C
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Linux
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Git
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a
+                  href="https://gist.github.com/sanjaynatesan/4e65a9d99bef53e8dfb4f0811bf50d7c"
+                  target="_blank"
+                >
+                  <SiGithub />
+                </a>
+              </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className=" mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Statistical Computing
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                SimplifiEdu SAT Analysis Tool
               </h3>
-              <h4 className="py-4 text-teal-600">
-                Some staticial computing languages and packages I have used
+              <h4 className="py-4">
+                Launched a full-stack web application a developed scoring
+                algorithm to provide critical evaluation and feedback to
+                students. Optimized code for improved site navigation, response,
+                and user experience.
               </h4>
-              <p className="text-gray-800 dark:text-white py-1">Python</p>
-              <p className="text-gray-800 dark:text-white py-1">R</p>
-              <p className="text-gray-800 dark:text-white py-1">
-                scikit learn / sciPy
-              </p>
-              <p className="text-gray-800 dark:text-white py-1">ggplot2</p>
-              <p className="text-gray-800 dark:text-white py-1">
-                dplyr/tidyr/shiny
-              </p>
-              <p className="text-gray-800 dark:text-white py-1">
-                pandas/matplotlib
-              </p>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Python
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  React
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Flask
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  ChakraUI
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Heroku
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  EmailJS
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a href="https://sat-react.herokuapp.com/" target="_blank">
+                  <SiGooglechrome />
+                </a>
+              </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                Rockefeller University - COVID-19 Vaccination Rate Analysis
+              </h3>
+              <h4 className="py-4">
+                As part of the 2020 Rockefeller University Summer Science
+                Research Program, conducted a statistical analysis using R
+                (including libraries like limma, tidyverse, and edgeR) and
+                explored plausible relationships between SARS-CoV-2 antibody
+                binding, vaccination rates, and demographics.
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  R
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Python
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  limma
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  tidyverse
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  edgeR
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  ggplot2
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a href="http://sanjaynatesan.com/" target="_blank">
+                  <SiGithub />
+                </a>
+              </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                Rockefeller University - COVID-19 Gene Analysis
+              </h3>
+              <h4 className="py-4">
+                As part of the 2019 Rockefeller University Summer Science
+                Research Program, explored the relationship between COVID-19 and
+                Gene Expression in patients testing positive for COVID, and
+                identified several potential genetic indicators of the disease.
+                These findings were later confirmed by other studies conducted
+                in Qatar, the US, and Europe.
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  R
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  limma
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  tidyverse
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  edgeR
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  ggplot2
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a href="http://sanjaynatesan.com/" target="_blank">
+                  <SiGithub />
+                </a>
+              </div>
             </div>
           </div>
         </section>

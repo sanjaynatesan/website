@@ -1,8 +1,8 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import Image from "next/image";
-import sanjay from "../public/sanjay.jpg";
-import design from "../public/design.png";
+import design from "../public/img/design.png";
+import sanjay from "../public/img/sanjay.jpg";
 import { useState } from "react";
 import Typed from "react-typed";
 import Link from "next/link";
