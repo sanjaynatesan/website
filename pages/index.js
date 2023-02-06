@@ -478,6 +478,40 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+                Crimean-Congo Hemorrhagic Fever Analysis Project
+              </h3>
+              <h4 className="py-4">
+                As part of the Han Lab at the Cary Institute of Ecosystem
+                Studies, I led a comprehensive study on factors impacting the
+                prevalence of CCHF in Southeastern Europe, employing statistical
+                methods and R programming to identify correlation between
+                environmental/social factors and infection rates.
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  R
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  limma
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  tidyverse
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  ggplot2
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a
+                  href="https://www.caryinstitute.org/news-insights/feature/team-cary-sanjay-natesan"
+                  target="_blank"
+                >
+                  <IoIosPaper />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
