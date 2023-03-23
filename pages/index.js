@@ -83,7 +83,7 @@ export default function Home() {
 
       <main className="bg-white text-black dark:bg-gray-800 dark:text-white ">
         <section className="min-h-screen pb-32">
-          <nav className="pt-6 pb-2 pr-8 w-full flex justify-between fixed z-[5] border-b-2 border-teal-400 dark:border-teal-800 bg-opacity-100 bg-white dark:bg-gray-700">
+          <nav className="pt-6 pb-2 pr-8 w-full flex justify-between fixed z-[5] border-b-2 border-teal-400 dark:border-teal-800 bg-opacity-90 dark:bg-opacity-95 bg-white dark:bg-gray-700">
             <Link href="/">
               <h1 className="text-xl pl-8 pt-2 font-burtons">sanjaynatesan</h1>
             </Link>
@@ -601,6 +601,21 @@ export default function Home() {
                   <IoIosPaper />
                 </a>
               </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  Whats's next!
+                </h3>
+                <h2>
+                  <i>Current - ??</i>
+                </h2>
+              </div>
+              <h4 className="pt-4">
+                I always love working on new projects, so if you have any that
+                you think I might be interested in, please feel free to reach
+                out!
+              </h4>
             </div>
           </div>
         </section>
