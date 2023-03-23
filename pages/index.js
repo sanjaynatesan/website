@@ -31,9 +31,7 @@ import {
 import { IoIosPaper } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Typed from "react-typed";
-import design from "../public/img/design.png";
 import sanjay from "../public/img/sanjay.jpg";
-import covres from "../public/img/covid-research.jpeg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -74,12 +72,12 @@ export default function Home() {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             className="absolute inset-y-36 px-4 py-2 text-black dark:text-white"
             href="/music"
           >
             Music Page
-          </Link>
+          </Link> */}
         </div>
       )}
 
@@ -321,16 +319,24 @@ export default function Home() {
           </div>
           <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-8">
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                Manhattan Virome Project
-              </h3>
-              <h4 className="py-4">
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  Manhattan Virome Project
+                </h3>
+                <h2>
+                  <i>Dec 2021 - Feb 2023</i>
+                </h2>
+              </div>
+              <h4 className="pt-4">
                 Helped investigate the transmission of respiratory viruses
                 throughout urban Manhattan to develop significant understanding
                 into transmission dynamics, and improving respiratory disease
                 model simulation and forecast. Contributed to development of
                 website describing findings.
               </h4>
+              <h3 className="pb-4">
+                <b>(Paper submitted for review)</b>
+              </h3>
               <div className="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
                 <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
                   Python
@@ -361,9 +367,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                Personal Website
-              </h3>
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  Personal Website
+                </h3>
+                <h2>
+                  <i>Jan 2023 - Mar 2023</i>
+                </h2>
+              </div>
               <h4 className="py-4">
                 Created this personal website from scratch using Next.js, React,
                 and Tailwind CSS. This website was deployed using Vercel.
@@ -395,9 +406,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                HTTP Server
-              </h3>
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  HTTP Server
+                </h3>
+                <h2>
+                  <i>Jan 2022 - May 2022</i>
+                </h2>
+              </div>
               <h4 className="py-4">
                 Built an HTTP web server from scratch, using socket programming
                 in C to serve static HTML pages and dynamic pages queried from a
@@ -424,9 +440,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                SimplifiEdu SAT Analysis Tool
-              </h3>
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  SimplifiEdu SAT Analysis Tool
+                </h3>
+                <h2>
+                  <i>Jun 2022 - Mar 2023</i>
+                </h2>
+              </div>
               <h4 className="py-4">
                 Launched a full-stack web application a developed scoring
                 algorithm to provide critical evaluation and feedback to
@@ -463,9 +484,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                Rockefeller University - COVID-19 Vaccination Rate Analysis
-              </h3>
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  Rockefeller University - COVID-19 Vaccination Rate Analysis
+                </h3>
+                <h2>
+                  <i>Jun 2020 - Aug 2020</i>
+                </h2>
+              </div>
               <h4 className="py-4">
                 As part of the 2020 Rockefeller University Summer Science
                 Research Program, conducted a statistical analysis using R
@@ -500,9 +526,14 @@ export default function Home() {
               </div> */}
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
-                Rockefeller University - COVID-19 Gene Analysis
-              </h3>
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  Rockefeller University - COVID-19 Gene Analysis
+                </h3>
+                <h2>
+                  <i>Jun 2019 - Aug 2019</i>
+                </h2>
+              </div>
               <h4 className="py-4">
                 As part of the 2019 Rockefeller University Summer Science
                 Research Program, explored the relationship between COVID-19 and
@@ -535,9 +566,12 @@ export default function Home() {
               </div> */}
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
+              <h3 className=" text-2xl text-teal-600 font-medium">
                 Crimean-Congo Hemorrhagic Fever Analysis Project
               </h3>
+              <h2>
+                <i>Feb 2019 - Feb 2021</i>
+              </h2>
               <h4 className="py-4">
                 As part of the Han Lab at the Cary Institute of Ecosystem
                 Studies, I led a comprehensive study on factors impacting the
