@@ -49,21 +49,28 @@ export default function Home() {
       </Head>
 
       {showMenu && (
-        <div className="flex fixed items-center sm:hidden inset-y-0 left-0 z-10 p-6 w-1/2 bg-gray-100 top-0 lg:left-0 lg:w-60  peer-focus:left-0 peer:transition ease-out delay-150 duration-200 dark:bg-gray-700 dark:text-white">
-          <a href="localhost:3000" className=" w-max">
-            <h1 className="absolute inset-y-10 text-xl py-2 font-burtons text-black dark:text-white">
-              sanjaynatesan
-            </h1>
-          </a>
+        <div
+          className={`flex fixed items-center sm:hidden inset-y-0 right-0 z-10 p-6 w-1/2 bg-gray-100 top-0 lg:left-0 lg:w-60 dark:bg-gray-700 dark:text-white ease-in-out duration-300 border-l-2 border-teal-600 dark:border-teal-400 ${
+            showMenu ? "translate-x-0" : "translate-x-full"
+          }`} //peer-focus:left-0 peer:transition
+        >
+          <button
+            className="flex text-2xl text-black dark:text-white items-center cursor-pointer fixed right-16 px-4 top-10 z-50"
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            x
+          </button>
           <Link
             className="absolute inset-y-20 px-4 py-2 text-black dark:text-white"
             href="/#skills"
+            onClick={() => setShowMenu(!showMenu)}
           >
             Skills
           </Link>
           <Link
             className="absolute inset-y-28 px-4 py-2 text-black dark:text-white"
             href="/#projects"
+            onClick={() => setShowMenu(!showMenu)}
           >
             Projects
           </Link>
@@ -76,12 +83,12 @@ export default function Home() {
         </div>
       )}
 
-      <main className="bg-white text-black px-10 md:px-20 dark:bg-gray-800 dark:text-white ">
+      <main className="bg-white text-black dark:bg-gray-800 dark:text-white ">
         <section className="min-h-screen pb-32">
-          <nav className="py-8 mb-12 flex justify-between">
-            <a href="localhost:3000">
-              <h1 className="text-xl py-2 font-burtons">sanjaynatesan</h1>
-            </a>
+          <nav className="pt-6 pb-2 pr-8 w-full flex justify-between fixed z-[5] border-b-2 border-teal-400 dark:border-teal-800 bg-opacity-100 bg-white dark:bg-gray-700">
+            <Link href="/">
+              <h1 className="text-xl pl-8 pt-2 font-burtons">sanjaynatesan</h1>
+            </Link>
             <ul className="hidden items-center sm:flex">
               <li>
                 <BsFillMoonStarsFill
@@ -102,12 +109,12 @@ export default function Home() {
                 >
                   Projects
                 </Link>
-                <Link
+                {/* <Link
                   className="bg-gradient-to-r to-cyan-500 from-teal-500 text-white px-4 py-2 rounded-md"
                   href="/music"
                 >
                   Music Page
-                </Link>
+                </Link> */}
               </li>
             </ul>
             <ul className="flex items-center sm:hidden">
@@ -118,7 +125,7 @@ export default function Home() {
                 />
               </li>
               <button
-                className="px-4 text-6xl text-gray dark:text-white rounded-md"
+                className="px-4 text-[52px] text-gray dark:text-white rounded-md"
                 onClick={() => {
                   setShowMenu(!showMenu);
                 }}
@@ -127,8 +134,8 @@ export default function Home() {
               </button>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+          <div className="text-center p-10 px-10 md:px-20 z-0">
+            <h2 className="text-5xl py-2 pt-20 text-teal-600 font-medium md:text-6xl">
               Sanjay Natesan
             </h2>
             <p className="text-2xl py-2 md:text-3xl font-light">
@@ -151,7 +158,7 @@ export default function Home() {
               reach out to me at my email, found below! Happy travels :)
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-3 px-10 md:px-20 text-gray-600 dark:text-white">
             <a href="https://www.linkedin.com/in/sanjaynatesan" target="_blank">
               <AiFillLinkedin />
             </a>
@@ -162,12 +169,12 @@ export default function Home() {
               <AiOutlineMail />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b z-0 from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={sanjay} fill />
           </div>
         </section>
 
-        <section className="text-center" id="skills">
+        <section className="text-center px-10 md:px-20" id="skills">
           <div>
             <h3 className="text-5xl py-1 text-teal-600">Skills</h3>
           </div>
@@ -308,7 +315,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-24 pb-10" id="projects">
+        <section className="pt-24 pb-10 px-10 md:px-20" id="projects">
           <div className="text-center">
             <h3 className="text-3xl py-1 text-teal-600">Select Projects</h3>
           </div>
@@ -324,7 +331,7 @@ export default function Home() {
                 model simulation and forecast. Contributed to development of
                 website describing findings.
               </h4>
-              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+              <div className="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
                 <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
                   Python
                 </div>
@@ -342,15 +349,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
-                <a href="http://18.204.18.242:1234/" target="_blank">
+                <a href="http://100.27.4.204:1234/" target="_blank">
                   <SiGooglechrome />
                 </a>
-                <a
+                {/* <a
                   href="https://genomemedicine.biomedcentral.com/"
                   target="_blank"
                 >
                   <IoIosPaper />
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
@@ -486,11 +493,11 @@ export default function Home() {
                   ggplot2
                 </div>
               </div>
-              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+              {/* <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
                 <a href="http://sanjaynatesan.com/" target="_blank">
                   <SiGithub />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
@@ -521,11 +528,11 @@ export default function Home() {
                   ggplot2
                 </div>
               </div>
-              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+              {/* <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
                 <a href="http://sanjaynatesan.com/" target="_blank">
                   <SiGithub />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <h3 className=" text-2xl text-teal-600 font-medium pt-8 pb-2">
