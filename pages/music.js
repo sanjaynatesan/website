@@ -78,10 +78,10 @@ export default function Home() {
               </strong>
             </p>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
-              Hey! I'm Sanjay, a student at Columbia University studying
+              Hey! I&apos;m Sanjay, a student at Columbia University studying
               Computer Science and Economics. Welcome to my website, where you
               can get a glimpse into my work in CS and Music (and sometimes,
-              their intersection!) Feel free to explore, and don't hesitate to
+              their intersection!) Feel free to explore, and don&apos;t hesitate to
               reach out to me at my email, found below! Happy travels :)
             </p>
           </div>
