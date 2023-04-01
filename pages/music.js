@@ -8,7 +8,6 @@ import Typed from "react-typed";
 import Link from "next/link";
 import {
   SiPython,
-  SiJava,
   SiJavascript,
   SiCss3,
   SiHtml5,
@@ -192,7 +191,6 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-10 py-3 max-w-4xl mx-auto text-gray-600 dark:text-white">
             <SiPython />
-            <SiJava />
             <SiRstudio />
             <SiC />
             <SiJavascript />
