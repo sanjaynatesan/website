@@ -157,10 +157,18 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 px-10 md:px-20 text-gray-600 dark:text-white">
-            <a href="https://www.linkedin.com/in/sanjaynatesan" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/sanjaynatesan"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/sanjaynatesan" target="_blank">
+            <a
+              href="https://github.com/sanjaynatesan"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub />
             </a>
             <a href="mailto:sanjay.natesan@columbia.edu">
@@ -355,7 +363,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
-                <a href="http://100.27.4.204:1234/" target="_blank">
+                <a
+                  href="http://100.27.4.204:1234/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SiGooglechrome />
                 </a>
                 {/* <a
@@ -394,12 +406,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
-                <a href="http://sanjaynatesan.com/" target="_blank">
+                <a
+                  href="http://sanjaynatesan.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SiGooglechrome />
                 </a>
                 <a
                   href="https://github.com/sanjaynatesan/website"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <SiGithub />
                 </a>
@@ -434,6 +451,7 @@ export default function Home() {
                 <a
                   href="https://gist.github.com/sanjaynatesan/4e65a9d99bef53e8dfb4f0811bf50d7c"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <SiGithub />
                 </a>
@@ -478,6 +496,7 @@ export default function Home() {
                 <a
                   href="https://ingenius-diagnostics.herokuapp.com/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <SiGooglechrome />
                 </a>
@@ -597,6 +616,7 @@ export default function Home() {
                 <a
                   href="https://www.caryinstitute.org/news-insights/feature/team-cary-sanjay-natesan"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <IoIosPaper />
                 </a>

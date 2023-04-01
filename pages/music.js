@@ -63,7 +63,13 @@ export default function Home() {
               <span className="text-slider-items"></span>
               <strong className="text-slider">
                 <Typed
-                  strings={["Mridangam", "Venu Flute", "Tabla", "Kanjira", "Carantic Vocal"]}
+                  strings={[
+                    "Mridangam",
+                    "Venu Flute",
+                    "Tabla",
+                    "Kanjira",
+                    "Carantic Vocal",
+                  ]}
                   typeSpeed={100}
                   backDelay={1100}
                   backSpeed={50}
@@ -80,10 +86,18 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <a href="https://www.linkedin.com/in/sanjaynatesan" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/sanjaynatesan"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/sanjaynatesan" target="_blank">
+            <a
+              href="https://github.com/sanjaynatesan"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub />
             </a>
             <a href="mailto:sanjay.natesan@columbia.edu">
