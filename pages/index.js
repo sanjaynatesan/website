@@ -17,7 +17,6 @@ import {
   SiGooglechrome,
   SiHeroku,
   SiHtml5,
-  SiJava,
   SiJavascript,
   SiNextdotjs,
   SiPostman,
@@ -30,6 +29,7 @@ import {
 } from "react-icons/si";
 import { IoIosPaper } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaJava } from "react-icons/fa";
 import Typed from "react-typed";
 import sanjay from "../public/img/sanjay.jpg";
 
@@ -152,8 +152,8 @@ export default function Home() {
               Hey! I&apos;m Sanjay, a student at Columbia University studying
               Computer Science and Economics. Welcome to my website, where you
               can get a glimpse into my work in CS and Music (and sometimes,
-              their intersection!) Feel free to explore, and don&apos;t hesitate to
-              reach out to me at my email, found below! Happy travels :)
+              their intersection!) Feel free to explore, and don&apos;t hesitate
+              to reach out to me at my email, found below! Happy travels :)
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 px-10 md:px-20 text-gray-600 dark:text-white">
@@ -196,7 +196,7 @@ export default function Home() {
             </div>
             <div className="flex bg-teal-600 dark:bg-white p-3 w-24 h-32 text-center rounded-md mx-auto hover:scale-105 ease-in duration-300">
               <div className="m-auto">
-                <SiJava className="mx-auto" />
+                <FaJava className="mx-auto" />
                 <p className="pt-2 text-sm">Java</p>
               </div>
             </div>
