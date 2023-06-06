@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import {
   SiAmazonaws,
   SiChakraui,
@@ -14,7 +15,6 @@ import {
   SiFlask,
   SiGit,
   SiGithub,
-  SiGooglechrome,
   SiHeroku,
   SiHtml5,
   SiJavascript,
@@ -27,7 +27,6 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
-import { IoIosPaper } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaJava } from "react-icons/fa";
 import Typed from "react-typed";
@@ -329,6 +328,99 @@ export default function Home() {
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <div className="pt-8 pb-2">
                 <h3 className=" text-2xl text-teal-600 font-medium">
+                  Personal Website
+                </h3>
+                <h2>
+                  <i>Jan 2023 - Mar 2023</i>
+                </h2>
+              </div>
+              <h4 className="py-4">
+                Created this personal website from scratch using Next.js, React,
+                and Tailwind CSS. This website was deployed using Vercel.
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Next.js
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  React
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Tailwind CSS
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Vercel
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a
+                  className="px-1.5 rounded-full border-2 flex flex-row text-lg border-gray-600 dark:border-white"
+                  href="http://sanjaynatesan.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="mr-2">Link</div>
+                  <FaExternalLinkAlt className=" text-md mr-2 mt-1" />
+                </a>
+                <a
+                  href="https://github.com/sanjaynatesan/website"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+              </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
+                  SimplifiEdu SAT Analysis Tool
+                </h3>
+                <h2>
+                  <i>Jun 2022 - Current</i>
+                </h2>
+              </div>
+              <h4 className="py-4">
+                Launched a full-stack web application a developed scoring
+                algorithm to provide critical evaluation and feedback to
+                students. Optimized code for improved site navigation, response,
+                and user experience.
+              </h4>
+              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Python
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  React
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Flask
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  ChakraUI
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  Heroku
+                </div>
+                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
+                  EmailJS
+                </div>
+              </div>
+              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
+                <a
+                  className="px-1.5 rounded-full border-2 flex flex-row text-lg border-gray-600 dark:border-white"
+                  href="https://ingenius-diagnostics.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="mr-2">Link</div>
+                  <FaExternalLinkAlt className=" text-md mr-2 mt-1" />
+                </a>
+              </div>
+            </div>
+            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
+              <div className="pt-8 pb-2">
+                <h3 className=" text-2xl text-teal-600 font-medium">
                   Manhattan Virome Project
                 </h3>
                 <h2>
@@ -364,11 +456,13 @@ export default function Home() {
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
                 <a
+                  className="px-1.5 rounded-full border-2 flex flex-row text-lg border-gray-600 dark:border-white"
                   href="http://100.27.4.204:1234/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <SiGooglechrome />
+                  <div className="mr-2">Link</div>
+                  <FaExternalLinkAlt className=" text-md mr-2 mt-1" />
                 </a>
                 {/* <a
                   href="https://genomemedicine.biomedcentral.com/"
@@ -381,40 +475,27 @@ export default function Home() {
             <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <div className="pt-8 pb-2">
                 <h3 className=" text-2xl text-teal-600 font-medium">
-                  Personal Website
+                  AI 2048 Solver
                 </h3>
                 <h2>
-                  <i>Jan 2023 - Mar 2023</i>
+                  <i>Oct 2022 - Nov 2022</i>
                 </h2>
               </div>
               <h4 className="py-4">
-                Created this personal website from scratch using Next.js, React,
-                and Tailwind CSS. This website was deployed using Vercel.
+                As part of Artificial Intelligence Class (Columbia University
+                COMS4701), implemented various heuristics, expectiminimax
+                algorithms, and alpha-beta pruning to play 2048 and solve,
+                consistently achieving a highest tile block of 2048, 4096, or
+                8192.
               </h4>
               <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
                 <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Next.js
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  React
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Tailwind CSS
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Vercel
+                  Python
                 </div>
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
                 <a
-                  href="http://sanjaynatesan.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiGooglechrome />
-                </a>
-                <a
-                  href="https://github.com/sanjaynatesan/website"
+                  href="https://github.com/sanjaynatesan/2048-solver"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -454,51 +535,6 @@ export default function Home() {
                   rel="noreferrer"
                 >
                   <SiGithub />
-                </a>
-              </div>
-            </div>
-            <div className="relative text-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
-              <div className="pt-8 pb-2">
-                <h3 className=" text-2xl text-teal-600 font-medium">
-                  SimplifiEdu SAT Analysis Tool
-                </h3>
-                <h2>
-                  <i>Jun 2022 - Mar 2023</i>
-                </h2>
-              </div>
-              <h4 className="py-4">
-                Launched a full-stack web application a developed scoring
-                algorithm to provide critical evaluation and feedback to
-                students. Optimized code for improved site navigation, response,
-                and user experience.
-              </h4>
-              <div class="flex flex-wrap gap-3 text-red-500 dark:text-red-400">
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Python
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  React
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Flask
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  ChakraUI
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  Heroku
-                </div>
-                <div className=" px-1.5 py-0.5 rounded-full border-solid border-4 border-red-500 dark:border-red-400">
-                  EmailJS
-                </div>
-              </div>
-              <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
-                <a
-                  href="https://ingenius-diagnostics.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiGooglechrome />
                 </a>
               </div>
             </div>
@@ -614,11 +650,13 @@ export default function Home() {
               </div>
               <div className="text-3xl flex justify-center gap-7 py-4 text-gray-600 dark:text-white">
                 <a
+                  className="px-1.5 rounded-full border-2 flex flex-row text-lg border-gray-600 dark:border-white"
                   href="https://www.caryinstitute.org/news-insights/feature/team-cary-sanjay-natesan"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IoIosPaper />
+                  <div className="mr-2">Link</div>
+                  <FaExternalLinkAlt className=" text-md mr-2 mt-1" />
                 </a>
               </div>
             </div>
